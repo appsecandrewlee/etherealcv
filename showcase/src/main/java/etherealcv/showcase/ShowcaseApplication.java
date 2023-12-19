@@ -8,10 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ShowcaseApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ShowcaseApplication.class, args);
+		MongoCred mongoCred = new MongoCred();
+		mongoCred.mongoConnect();
 	}
-
-
-	MongoCred mongoCred;
-
 }
 

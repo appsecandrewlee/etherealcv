@@ -12,7 +12,7 @@ import org.bson.Document;
 
 public class MongoCred {
     public void mongoConnect(){
-        String connectionString = "mongodb+srv://appsecandrewlee:IbigOcq5GvHdxBTt@etherealcv.woosbgt.mongodb.net/?retryWrites=true&w=majority";
+        String connectionString = "mongodb://localhost:27017/etherealcv";
         ServerApi serverApi = ServerApi.builder()
                 .version(ServerApiVersion.V1)
                 .build();
